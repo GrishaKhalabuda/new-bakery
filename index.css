@@ -7,6 +7,11 @@ ul {
 .link:hover {
   color: #819b57;
 }
+body {
+  color: #31261a;
+  font-family: 'Poppins' sans-serif;
+  font-size: 18px;
+}
 
 .button {
   color: #faf4ea;
@@ -21,6 +26,9 @@ ul {
 }
 .hero-title {
   color: #faf4ea;
+  font-family: 'Poppins' sans-serif;
+  text-align: center;
+  font-size: 128px;
 }
 .hero-title .accent {
   color: #819b57;
@@ -31,4 +39,14 @@ ul {
 }
 .section-title {
   color: #31261a;
+}
+.section-title .accent {
+  color: #465929;
+}
+.traditions-text .brand {
+  color: #819b57;
+}
+.traditions-text .uppercase {
+  color: #819b57;
+  text-transform: uppercase;
 }
