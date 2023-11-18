@@ -30,7 +30,36 @@
   font-weight: 900;
   src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
 }
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 
+.section {
+  padding: 48px 0;
+}
 ul {
   list-style-type: none;
 }
@@ -49,6 +78,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 address {
   font-style: normal;
@@ -58,6 +88,7 @@ a {
   text-decoration: none;
 }
 .button {
+  padding: 16px 32px;
   color: #faf4ea;
   background-color: #819b57;
   border: 2px solid #819b57;
@@ -70,6 +101,7 @@ a {
   background-color: transparent;
 }
 .hero-title {
+  margin-bottom: 0;
   color: #faf4ea;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -78,6 +110,9 @@ a {
 }
 .hero-title .accent {
   color: #819b57;
+}
+.hero-section {
+  padding: 272px 0;
 }
 .advantages-list {
   background-color: #819b57;
@@ -106,14 +141,28 @@ a {
   color: #819b57;
   text-transform: uppercase;
 }
+.traditions-section {
+  padding-top: 96px;
+}
+.traditions-title {
+  margin-bottom: 42px;
+}
 .chefs-title {
   color: #31261a;
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
+.chef-title {
+  margin-bottom: 80px;
+}
+
 .format-title {
   font-size: 24px;
   font-weight: 600;
+}
+.formats-title {
+  margin-bottom: 80px;
 }
 .address-link {
   font-size: 16px;
@@ -127,4 +176,7 @@ a {
   color: #a18268;
   font-size: 14px;
   font-weight: 400;
+}
+.contact-title {
+  margin-bottom: 16px;
 }
