@@ -81,6 +81,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
+  background-color: #faf4ea;
 }
 .header-container {
   display: flex;
@@ -132,6 +133,10 @@ a {
 }
 .hero-section {
   padding: 272px 0;
+  background-image: url('./images/couple-in-bakery.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 .advantages-section {
   background-color: #819b57;
@@ -148,7 +153,19 @@ a {
   font-weight: 300;
   color: #faf4ea;
 }
-
+.chef-title::before,
+.chef-title::after {
+  width: 352px;
+  height: 2px;
+  background: #cfcfbc;
+  content: '';
+  display: block;
+}
+.chef-title {
+  max-width: 520px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
 .section-title {
   color: #31261a;
   font-size: 64px;
@@ -183,22 +200,38 @@ a {
 .traditions-text.limited {
   max-width: 340px;
 }
+.chef-image {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 #faf4ea, -16px 16px 0 2px #a18268;
+}
 .chefs-title {
   color: #31261a;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.chef-title {
-  margin-bottom: 80px;
-}
-
 .format-title {
   font-size: 24px;
   font-weight: 600;
 }
 .formats-title {
+  text-align: center;
   margin-bottom: 80px;
+}
+.format-card {
+  border-radius: 16px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+  padding: 24px;
+  height: 444px;
+}
+.format-list {
+  display: flex;
+  gap: 20px;
 }
 .address-link {
   font-size: 16px;
@@ -215,4 +248,11 @@ a {
 }
 .contact-title {
   margin-bottom: 16px;
+}
+.footer {
+  background-image: url('./images/footer-background.png');
+  background-color: #31261a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
