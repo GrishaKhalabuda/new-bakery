@@ -214,6 +214,15 @@ a {
   font-size: 24px;
   font-weight: 600;
 }
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel-arrow {
+  fill: #31261a;
+}
 .formats-title {
   text-align: center;
   margin-bottom: 80px;
@@ -237,6 +246,9 @@ a {
   font-size: 16px;
   font-weight: 300;
   color: #faf4ea;
+}
+.address-icon {
+  fill: #faf4ea;
 }
 .address-link:hover {
   color: #819b57;
