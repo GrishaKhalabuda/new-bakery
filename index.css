@@ -83,6 +83,13 @@ body {
   margin: 0;
   background-color: #faf4ea;
 }
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -134,7 +141,13 @@ a {
 }
 .hero-section {
   padding: 272px 0;
-  background-image: url('./images/couple-in-bakery.jpg');
+  background-image: linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url('./images/couple-in-bakery.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -258,6 +271,9 @@ a {
 }
 .carousel-button:hover .carousel-arrow {
   fill: #faf4ea;
+}
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 .formats-title {
   text-align: center;
@@ -390,6 +406,8 @@ a {
   display: flex;
   align-content: center;
   justify-content: center;
+  padding: 20px 0;
+  transition: opacity 1s, visibility 1s;
 }
 
 .backdrop.is-hidden {
@@ -399,8 +417,10 @@ a {
 }
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: #faf4ea;
   border-radius: 32px;
 }
