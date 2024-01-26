@@ -423,6 +423,7 @@ a {
   max-height: 880px;
   background-color: #faf4ea;
   border-radius: 32px;
+  padding: 128px;
 }
 .modal-close {
   position: absolute;
